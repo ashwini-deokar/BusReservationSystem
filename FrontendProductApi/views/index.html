@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Date</title>
+</head>
+
+<body>
+
+    <h2>Get Products</h2>
+    <input type="submit" value=" GET ALL PRODUCT" id="btnProducts">
+    <div id="allProducts"></div>
+    <br><br><br>
+
+    <!-- Adding Product-->
+    <h2>ADD PRODUCT PROCESS</h2>
+    <form action="http://localhost:8080/addProduct" id="post-product">
+        <div>
+            <label>PRODUCT NAME</label>
+            <input type="text" name="productName" id="productName">
+        </div><br><br>
+        <div>
+            <label>PRODUCT QUANTITY</label>
+            <input type="number" name="productquantity" id="productquantity">
+        </div><br><br>
+        <div>
+            <label>PRODUCT PRICE</label>
+            <input type="number" name="productPrice" id="productPrice">
+        </div><br><br>
+        <input type="submit" value="ADD PRODUCT" id="btnAddProduct">
+    </form>
+
+
+</body>
+<script src="/js/server.js"></script>
+
+</html>
